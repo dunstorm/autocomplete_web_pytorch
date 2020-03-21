@@ -1,4 +1,4 @@
 flask
-torch
+torch==1.0.1
 regex
 tqdm
