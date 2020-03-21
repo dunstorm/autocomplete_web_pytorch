@@ -4,3 +4,4 @@ regex
 tqdm
 gunicorn
 numpy
+fairseq
