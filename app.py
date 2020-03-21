@@ -3,7 +3,7 @@ from predict import PythonPredictor
 import json
 
 app = Flask(__name__, template_folder='templates')
-textPredictor = PythonPredictor(dataset="roberta.large")
+textPredictor = PythonPredictor(dataset="roberta.base")
 
 @app.route('/predict', methods=['POST'])
 def predict():
@@ -18,4 +18,4 @@ def home():
     return render_template("index.html")
 
 if __name__=="__main__":
-    app.run(debug=True)
+    app.run()
